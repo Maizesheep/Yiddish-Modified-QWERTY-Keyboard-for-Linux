@@ -1,0 +1,69 @@
+//based on Yiddish Klal, named YiddishQ by Maizesheep
+
+default partial
+xkb_symbols "basic" {
+
+    key <AE01>	{ [         1,     exclam							  ]	};
+    key <AE02>	{ [         2,         at 							  ]	};
+    key <AE03>	{ [         3, numbersign							  ]	};
+    key <AE04>	{ [         4,     dollar 							  ]	};
+    key <AE05>	{ [         5,    percent 							  ]	};
+    key <AE06>	{ [         6, asciicircum 							  ]	};
+    key <AE07>	{ [         7,  ampersand 							  ]	};
+    key <AE08>	{ [         8,   asterisk 							  ]	};
+    key <AE09>	{ [         9,  parenleft     						  ]	};
+    key <AE10>	{ [         0, parenright							  ]	};
+    key <AE11>	{ [     U05BE,      minus							  ]	};
+    key <AE12>	{ [     equal,       plus							  ] };
+
+    key <AD01>	{ [     U05D0     									  ]	};
+    key <AD02>	{ [     U05E9,    	UFB2B							  ]	};
+    key <AD03>	{ [     U05E2,    	UFB20						      ] };
+    key <AD04>	{ [     U05E8      	 								  ]	};
+    key <AD05>	{ [     U05D8										  ]	};
+    key <AD06>	{ [     UFB1F,      U05B7							  ]	};
+    key <AD07>	{ [     U05D5,      UFB35		       				  ]	};
+    key <AD08>	{ [     U05D9,      UFB1D,      U05B4		          ]	};
+    key <AD09>	{ [     UFB2F,      U05F2,      U05B8			 	  ]	};
+    key <AD10>	{ [     UFB44,      UFB43,      U05BC				  ]	};
+    key <AD11>	{ [bracketleft,  braceleft							  ]	};
+    key <AD12>	{ [bracketright, braceright						      ] };
+
+    key <AC01>	{ [     UFB2E,		U05B7                             ] };
+    key <AC02>	{ [     U05E1,		U05EA							  ]	};
+    key <AC03>	{ [     U05D3										  ]	};
+    key <AC04>	{ [    	U05E4,     	UFB4E,      U05BF  			      ]	};
+    key <AC05>	{ [     U05D2										  ]	};
+    key <AC06>	{ [     U05D4,      U05D7							  ] };
+    key <AC07>	{ [     U05F2 									      ]	};
+    key <AC08>	{ [     U05E7,      UFB3B,      UFB4D			      ]	};
+    key <AC09>	{ [     U05DC										  ]	};
+    key <AC10>	{ [ semicolon,    colon							      ]	};
+    key <AC11>	{ [apostrophe, quotedbl								  ]	};
+    key <TLDE>	{ [     grave, asciitilde							  ]	};
+
+    key <BKSL>	{ [ backslash,        bar							  ]	};
+    key <AB01>	{ [     U05D6										  ]	};
+    key <AB02>	{ [     U05DB,      U05DA							  ]	};
+    key <AB03>	{ [     U05E6,      U05E5							  ]	};
+    key <AB04>	{ [     U05F0,      UFB4C							  ]	};
+    key <AB05>	{ [     U05D1,      UFB31							  ]	};
+    key <AB06>	{ [     U05E0,      U05DF							  ]	};
+    key <AB07>	{ [     U05DE,      U05DD						      ]	};
+    key <AB08>	{ [     comma,       less							  ]	};
+    key <AB09>	{ [    period,    greater							  ]	};
+    key <AB10>	{ [     slash,   question							  ]	};
+
+};
+
+partial alphanumeric_keys
+xkb_symbols "euro" {
+
+    include "us(basic)"
+    name[Group1]= "English (US, euro on 5)";
+
+    include "eurosign(5)"
+
+    include "level3(ralt_switch)"
+};
+
