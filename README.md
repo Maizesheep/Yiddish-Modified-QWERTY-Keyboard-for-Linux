@@ -20,8 +20,19 @@ Shift + [key] includes these results:
 
 Alt + [key] gives the combining diacritics for certain keys, as shown below with the symbols in the top right
 
-I'm still not entirely sure how this is installed, so please find some tutorials on how to do this because frankly I find this very confusing.
+Here's how to install YiddishQ (at least on Ubuntu, I just started using Kubuntu and that's all I know, check with your own distro if it's different)
+
+1. Download the file I put in /symbols
+2. Put this file in /usr/share/X11/xkb/symbols (you need to open as administrator to do this)
+3. Go to /usr/share/X11/xkb/rules
+4. Open both base.lst and evdev.lst and add the text from the file I named `lst.txt` at the bottom of the `! layout` section. 
+You can find that section by Control + F and searching for `! variant`. Paste in the text below `Wolof` or below `custom`, whichever you prefer
+5. Open both base.xml and evdev.xml and add the text from the file I named `xml.txt` before the end of the `layoutList` section.
+You can find that section by Control + F and searching for `layoutList` and going to the second instance in the file. Paste in the text below `Wolof` or below `custom`, whichever you prefer
+6. Consult the links below (especially the last one) if it doesn't work, and consult my chart for the locations of each letter. Happy typing!
+
 <a href="https://www.youtube.com/watch?v=c_2ZEviudXY">YouTube</a>
 <a href="https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions">Ubuntu Forums</a>
+<a href="https://ubuntu-mate.community/t/make-your-own-custom-keyboard-layout-for-linux/19733">Ubuntu Mate</a>
 
 ![keyboard-layout-linux](https://github.com/Maizesheep/Yiddish-Modified-QWERTY-Keyboard-for-Linux/assets/96145017/3d490904-595e-4e94-abd7-7bd6836e5d3e)
