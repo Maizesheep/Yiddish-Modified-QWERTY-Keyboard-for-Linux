@@ -1,0 +1,11 @@
+<layout>
+      <configItem>
+        <name>yidq</name>
+        <shortDescription>yidq</shortDescription>
+        <description>YiddishQ</description>
+        <languageList>
+          <iso639Id>yid</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList/>
+    </layout>
